@@ -18,11 +18,11 @@ class Solution {
         }
         return res;
     }
-}
+
 //
 //
 //sort character
-class Solution {
+
     public String frequencySort(String s) 
     {
         Map<Character, Integer> map = new HashMap<>();
@@ -45,7 +45,7 @@ class Solution {
 //
 //two summ
 
-class Solution {
+
     public int[] twoSum(int[] nums, int target) 
     {
         Map<Integer, Integer> map = new HashMap<>();
@@ -60,11 +60,11 @@ class Solution {
         }
         return new int[0]; // never reached
     }
-}
+
 //
 //last stone weight
 
-class Solution {
+
     public int lastStoneWeight(int[] stones) 
     {
         PriorityQueue<Integer> pq =
@@ -80,10 +80,10 @@ class Solution {
 
         return pq.isEmpty() ? 0 : pq.poll();
     }
-}
+
 //
 //search in rotated sorted array
-class Solution {
+
     public int search(int[] nums, int target) 
     {
         int left = 0, right = nums.length - 1;
@@ -113,10 +113,10 @@ class Solution {
 
         return -1; 
     }
-}
+
 //
 //longest substring without repeating char
-class Solution {
+
     public int lengthOfLongestSubstring(String s) {
         int[] freq = new int[128];
         int l = 0, max = 0;
@@ -130,10 +130,10 @@ class Solution {
         }
         return max;
     }
-}
+
 //
 //jump game
-class Solution {
+
     public int jump(int[] nums) 
     {
         int jumps = 0, end = 0, far = 0;
@@ -147,7 +147,7 @@ class Solution {
         }
         return jumps;
     }
-}
+
 //add two nos
 class ListNode {
     int val;
@@ -156,7 +156,7 @@ class ListNode {
     ListNode(int val) { this.val = val; }
 }
 
-class Solution {
+
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0), curr = dummy;
         int carry = 0;
@@ -174,3 +174,4 @@ class Solution {
         return dummy.next;
     }
 }
+
